@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator App</title>
+        <script src="https://kit.fontawesome.com/615e8bb5b0.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <nav class="navbar bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">CalculatorApp</span>
+            </div>
+        </nav>
+        <div class="container">
+
+            <h1>Calculator</h1>
+
+            <p></p>
+            <h2 id="display"></h2>
+            <h4 id="secondDesplay"></h4>
+
+
+            <div>
+                <button class="smallB" id="bMC"> mc </button>
+                <button class="smallB" id="bMPlus"> m+ </button>
+                <button class="smallB" id="bMinus"> m- </button>
+                <button class="smallB" id="bMR"> mr </button>
+            </div>
+            <div>
+                <button class="smallB" id="bPI"> &#8508; </button>
+                <button class="smallB" id="bFraction"> 1&#8260x </button>
+                <button class="smallB" id="bSquare"> X<sup>2</sup> </button>
+                <button class="smallB" id="bSquareRoot"> &#8730; </button>
+            </div>
+            <div>
+                <button id="bAC"> AC </button>
+                <button class="operator" id="bPercentage"> % </button>
+                <button class="operator" id="plusMinus"> +/- </button>
+                <button class="operator" id="bDivide"> &divide; </button>
+            </div>
+            <div>
+                <button id="bSeven"> 7 </button>
+                <button id="bEight"> 8 </button>
+                <button id="bNine"> 9 </button>
+                <button class="operator" id="bMultiply"> &times; </button>
+            </div>
+            <div>
+                <button id="bFour"> 4 </button>
+                <button id="bFive"> 5 </button>
+                <button id="bSix"> 6 </button>
+                <button class="operator" id="bDeduct"> &#8722; </button>
+            </div>
+            <div>
+                <button id="bOne"> 1 </button>
+                <button id="bTwo"> 2 </button>
+                <button id="bThree"> 3 </button>
+                <button class="operator" id="bAdd"> &#43; </button>
+            </div>
+            <div>
+                <button id="bZero"> 0 </button>
+                <button id="bPoint"> . </button>
+                <button id="bBack"><i class="fa-solid fa-delete-left"></i> </button>
+                <button id="bTotal"> = </button>
+            </div>
+            <p class="d-inline-flex gap-1">
+
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                    LIST
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body" style="width: 270px;">
+                    <ul></ul>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>
