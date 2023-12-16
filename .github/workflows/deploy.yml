@@ -1,6 +1,9 @@
-...
+
 
 jobs:
+
+- name: Configure GitHub Pages
+  uses: actions/configure-pages@v3
   # Build job
   build:
     runs-on: ubuntu-latest
@@ -29,4 +32,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-...
